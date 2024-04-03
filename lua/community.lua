@@ -36,12 +36,12 @@ local M = {
 
   { import = "astrocommunity.completion.cmp-cmdline" },
 
+  { import = "astrocommunity.media.image-nvim" },
+
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
 
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
-
-  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
 
   { import = "astrocommunity.search.nvim-hlslens" },
 
@@ -62,10 +62,6 @@ local M = {
 
 if not helpers.is_nightly() then
   table.insert(M, { import = "astrocommunity.lsp.lsp-inlayhints-nvim" })
-end
-
-if helpers.is_macos() then
-  table.insert(M, { import = "astrocommunity.media.image-nvim" })
 end
 
 return M

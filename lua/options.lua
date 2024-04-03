@@ -29,6 +29,7 @@ return {
     -- Default SQL database connection for autocomplete
     -- db = "postgresql://test:123456@localhost/test"
   },
+  env = require("env")
 }
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
