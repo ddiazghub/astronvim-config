@@ -15,4 +15,7 @@ vim.filetype.add {
   },
 }
 
-vim.diagnostic.config({ virtual_text = false })
+vim.diagnostic.config({
+  virtual_text = false,
+  update_in_insert = true,
+})
