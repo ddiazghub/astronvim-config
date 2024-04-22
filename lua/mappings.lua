@@ -100,7 +100,7 @@ M.lsp = {
     --   desc = "Toggle LSP semantic highlight (buffer)",
     --   cond = function(client) return client.server_capabilities.semanticTokensProvider and vim.lsp.semantic_tokens end,
     -- },
-    gs = { "<cmd>TypescriptGoToSourceDefinition<cr>", desc = "Go to source definition (Typescript)" },
+    gs = { "<cmd>TSToolsGoToSourceDefinition<cr>", desc = "Go to source definition (Typescript)" },
   },
 }
 
