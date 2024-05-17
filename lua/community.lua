@@ -60,8 +60,4 @@ local M = {
   -- import/override with your plugins folder
 }
 
-if not helpers.is_nightly() then
-  table.insert(M, { import = "astrocommunity.lsp.lsp-inlayhints-nvim" })
-end
-
 return M

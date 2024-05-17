@@ -77,20 +77,20 @@ return {
         },
       },
       -- Enable inlay hints on lsp attach.
-      lsp_inlay_hint = {
-        cond = function (client, _)
-          local inlay_hints_available = client ~= nil and client.server_capabilities.inlayHintProvider or vim.bo.ft == "dart" or vim.bo.ft == "cs"
-
-          return require("helpers").is_nightly() and inlay_hints_available
-        end,
-        {
-          event = "LspAttach",
-          desc = "Enable Inlay Hints",
-          callback = function()
-            vim.lsp.inlay_hint.enable(0, true)
-          end
-        }
-      },
+      -- lsp_inlay_hint = {
+      --   cond = function (client, _)
+      --     local inlay_hints_available = client ~= nil and client.server_capabilities.inlayHintProvider or vim.bo.ft == "dart" or vim.bo.ft == "cs"
+      --
+      --     return require("helpers").is_nightly() and inlay_hints_available
+      --   end,
+      --   {
+      --     event = "LspAttach",
+      --     desc = "Enable Inlay Hints",
+      --     callback = function()
+      --       vim.lsp.inlay_hint.enable(0, true)
+      --     end
+      --   }
+      -- },
     },
     -- mappings to be set up on attaching of a language server
     mappings = require("mappings").lsp,

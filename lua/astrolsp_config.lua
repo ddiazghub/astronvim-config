@@ -2,6 +2,7 @@
 -- local lsputils = require "astronvim.utils.lsp"
 
 --- @type lspconfig.options?
+---@diagnostic disable: missing-fields
 return {
   -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
   tsserver = {
