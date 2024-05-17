@@ -31,6 +31,11 @@ return {
       bg = "#384050",
       sp = "#89DCEB",
     },
+
+    -- Inlay hints
+    LspInlayHint = {
+      fg = "#404040"
+    },
   },
   astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
     -- Normal = { bg = "#000000" },
